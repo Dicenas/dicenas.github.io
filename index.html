@@ -1,68 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Domain of Daniel</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        .container { max-width: 1200px; margin: auto; padding: 20px; }
-        header, footer { background: #333; color: #fff; text-align: center; padding: 10px 0; }
-        nav ul { padding: 0; list-style-type: none; }
-        nav ul li { display: inline; margin: 0 10px; }
-        nav ul li a { color: #fff; text-decoration: none; }
-        section { margin-bottom: 20px; }
-        h2 { color: #333; }
-        .portfolio-item, .blog-post { margin-bottom: 10px; }
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            flex: 1;
+        }
+
+        header,
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        header .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 0; /* No space between buttons */
+        }
+
+        .nav-buttons a {
+            padding: 20px 40px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #333;
+            border-radius: 0;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        footer {
+            margin-top: auto;
+        }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Your Name</h1>
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<div class="container">
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Introduce yourself here. Talk about your interests, what you're studying, and what you plan to do.</p>
-    </section>
-
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio-item">
-            <h3>Project Title</h3>
-            <p>Description of the project. What was your role? What technologies were used?</p>
+    <header>
+        <h1>Daniel Godfrey</h1>
+        <!-- Navigation buttons in the header -->
+        <div class="nav-buttons">
+            <a href="#about">About Me</a>
+            <a href="story.html">Stories</a>
         </div>
-        <!-- Add more projects here -->
-    </section>
+    </header>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, my name is Daniel. Future genius, billionaire, playboy, philanthropist.</p>
+            <p>Presently, I'm a 4th year software engineering stuent studying at Carlteon University.</p>
+            <p>Welcome to my humble abode, my domain, my home.</p>
+            <p>Here you will find humorous stories. Among other things.</p>
+            <p>Explore a little - and stay for as long as you like.</p>
+        </section>
 
-    <section id="blog">
-        <h2>Blog</h2>
-        <div class="blog-post">
-            <h3>Blog Post Title</h3>
-            <p>Summary of the post. <a href="#">Read more...</a></p>
-        </div>
-        <!-- Add more blog posts here -->
-    </section>
+        <section id="contact">
+            <hr>
+            <h2>Contact</h2>
+            <p>d_godfrey1@aol.com</p>
+        </section>
+    </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Let people know how to reach you. You could include a form here, or just an email address.</p>
-    </section>
-</div>
-
-<footer>
-    <p>Your Name &copy; 2024</p>
-</footer>
+    <footer>
+        <p>Daniel Godfrey &copy; 2024</p>
+    </footer>
 
 </body>
+
 </html>
