@@ -11,22 +11,138 @@
             height: 100%;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f0f0f0;
         }
 
-        h1 {
-            font-size: 2rem;
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            flex: 1;
+        }
+
+        header,
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        header .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 0; /* No space between buttons */
+        }
+
+        .nav-buttons a {
+            padding: 20px 40px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #333;
+            border-radius: 0;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+
+        .poem {
+            white-space: pre-wrap;
+            font-size: 1.2rem;
+            line-height: 1.6;
             color: #333;
+            text-align: justify;
+        }
+
+        .title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
     </style>
 </head>
 
 <body>
-<h1>I am the one who knocks</h1>
+
+<header>
+    <h1>Daniel Godfrey</h1>
+    <!-- Navigation buttons in the header -->
+    <div class="nav-buttons">
+        <a href="index.html">About Me</a>
+        <a href="story.html">Stories</a>
+        <a href="poetry.html">Poetry</a>
+    </div>
+</header>
+
+<div class="container">
+    <div class="title">The Snow Ain’t Fallin’, But It Stay Real for the Hustlers</div>
+    <div class="image">
+        <img src="snowman-hustler.png" alt="Snowman Hustler">
+    </div>
+    <div class="poem">
+        Snow ain't hit the ground, but my wrist on froze.<br>
+        Heart iced out, cold world, you know how it goes.<br>
+        Holidays hit, but the hustle don’t pause,<br>
+        Bricks for Christmas - call me Santa Claus.<br><br>
+
+        No sled, no reindeer, but I’m still on route.<br>
+        Homie on the wheel, pole ready to shoot.<br>
+        No love, the way my heat stay tucked inside.<br>
+        Slide a pack down the chimney, watch that product glide.<br><br>
+
+        Like Ho! Ho! Ho!<br>
+        I make it Snow! Snow! Snow!<br>
+        You feel me?<br>
+        Jingle bells - nah that's just the sound of my phone.<br><br>
+
+        Make that snow fall, make that white flake blow.<br>
+        Watch me ball hard, make them bands flow.<br><br>
+
+        Snowman dreams,<br>
+        Got the sticks on me.<br>
+        Got the switch on me.<br>
+        Got them bricks on me.<br><br>
+
+        Lighting up a square,<br>
+        Told 'em get that block glowing.<br>
+        Snuff a Camel in the snow,<br>
+        Red dots still glowing.<br><br>
+
+        Keep calm and mew on.
+    </div>
+</div>
+
+<footer>
+    <p>Daniel Godfrey &copy; 2024</p>
+</footer>
+
 </body>
 
 </html>

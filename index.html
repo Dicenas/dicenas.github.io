@@ -4,97 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domain of Daniel</title>
+    <title>About Me</title>
     <style>
         html,
         body {
             height: 100%;
             margin: 0;
             padding: 0;
-        }
-
-        body {
             font-family: Arial, sans-serif;
             display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-            flex: 1;
-        }
-
-        header,
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        header .nav-buttons {
-            display: flex;
             justify-content: center;
-            gap: 0; /* No space between buttons */
+            align-items: center;
+            background-color: #f0f0f0;
+            color: #333;
         }
 
-        .nav-buttons a {
-            padding: 20px 40px;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            border: 1px solid #333;
-            border-radius: 0;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .nav-buttons a:hover {
-            background-color: #555;
-            color: #fff;
-        }
-
-        footer {
-            margin-top: auto;
+        .knock-text {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
+<div class="knock-text">I AM THE ONE WHO KNOCKS</div>
 
-    <header>
-        <h1>Daniel Godfrey</h1>
-        <!-- Navigation buttons in the header -->
-        <div class="nav-buttons">
-            <a href="#about">About Me</a>
-            <a href="story.html">Stories</a>
-            <a href="poetry.html">Poetry</a>
-        </div>
-    </header>
-    
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hi, my name is Daniel. Future genius, billionaire, playboy, philanthropist.</p>
-            <p>Presently, I'm a 4th year software engineering stuent studying at Carlteon University.</p>
-            <p>Welcome to my humble abode, my domain, my home.</p>
-            <p>Here you will find humorous stories. Among other things.</p>
-            <p>Explore a little - and stay for as long as you like.</p>
-        </section>
+<script>
+    let clickCount = 0;
 
-        <section id="contact">
-            <hr>
-            <h2>Contact</h2>
-            <p>d_godfrey1@aol.com</p>
-        </section>
-    </div>
-
-    <footer>
-        <p>Daniel Godfrey &copy; 2024</p>
-    </footer>
-
+    document.body.addEventListener("click", function () {
+        clickCount++;
+        if (clickCount === 3) {
+            // Redirect to the normal About Me page
+            window.location.href = "normal_index.html"; // Use the URL of your normal page
+        }
+    });
+</script>
 </body>
 
 </html>
